@@ -2,367 +2,281 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Squadfree - Free bootstrap 3 one page template</title>
+    <title>Your offer! Будь готов к своему офферу!</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/animate.css" rel="stylesheet" />
-    <!-- Squad theme CSS -->
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/color/default.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <!-- =======================================================
-        Theme Name: Squadfree
-        Theme URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-        Author: BootstrapMade
-        Author URL: https://bootstrapmade.com
-    ======================================================= -->
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="/css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-<!-- Preloader -->
-<div id="preloader">
-    <div id="load"></div>
-</div>
+<body id="page-top">
 
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="/index.html">
-                <h1>Your Offer</h1>
-            </a>
+            <a class="navbar-brand page-scroll" href="/#page-top">Your offer</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/#intro">Главная</a></li>
-                <li><a href="/#about">Вопросы</a></li>
-                <li><a href="/#about">Цены</a></li>
-                <li><a href="/#service">Войти</a></li>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="/#about">О проекте</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#services">Вопросы</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#contact">Цена</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#contact">Войти</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
+    <!-- /.container-fluid -->
 </nav>
 
-<!-- Section: intro -->
-<section id="intro" class="intro">
-
-    <div class="slogan">
-        <h2>Your <span class="text_color">offer</span> </h2>
-        <h4>Получи свой лучший оффер</h4>
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading">Для PHP и Full stack разработчиков</h1>
+            <hr>
+            <p>
+                Лучший ресурс для подготовки к интервью и собеседованию<br />
+                Используя сервис yoffer вы подготовитесь к собеседованию за один вечер!
+            </p>
+<!--            <p>Подготовся к собеседованию за вечер!</p>-->
+            <a href="/#about" class="btn btn-primary btn-xl page-scroll">Начать подготовку</a>
+        </div>
     </div>
-    <div class="page-scroll">
-        <a href="/#service" class="btn btn-circle">
-            <i class="fa fa-angle-double-down animated"></i>
-        </a>
-    </div>
-</section>
-<!-- /Section: intro -->
+</header>
 
-<!-- Section: about -->
-<section id="about" class="home-section text-center">
-    <div class="heading-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="wow bounceInDown" data-wow-delay="0.4s">
-                        <div class="section-heading">
-                            <h2>О Проекте</h2>
-                            <i class="fa fa-2x fa-angle-down"></i>
-
-                        </div>
-                    </div>
-                </div>
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Все, что нужно для подготовки в одном месте!</h2>
+                <hr class="light">
+                <p class="text-faded">Мы собрали самые распространенные вопросы и самые интересные задачи.<br />
+                    Все вопросы решены senior разработчиками, к каждому заданию указаны ссылки на дополнительные материалы и ресурсы. <br />
+                    База вопросов и задач постоянно пополняется.
+                </p>
+                <a href="/#services" class="page-scroll btn btn-default btn-xl sr-button">Посмотреть вопросы</a>
             </div>
         </div>
     </div>
 </section>
-<!-- /Section: about -->
 
-
-<!-- Section: services -->
-<section id="service" class="home-section text-center bg-gray">
-
-    <div class="heading-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="wow bounceInDown" data-wow-delay="0.4s">
-                        <div class="section-heading">
-                            <h2>Кому нужен сервис</h2>
-                            <i class="fa fa-2x fa-angle-down"></i>
-
-                        </div>
-                    </div>
-                </div>
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Почему выбирают нас</h2>
+                <hr class="primary">
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-lg-offset-5">
-                <hr class="marginbot-50">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <img src="/img/icons/service-icon-1.png" alt="" />
-                        </div>
-                        <div class="service-desc">
-                            <h5>Print</h5>
-                            <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
-                        </div>
-                    </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                    <h3>Качество</h3>
+                    <p class="text-muted">Вопросы и задачи собраны с настоящих собеседований и прорешаны профессионалами</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <img src="/img/icons/service-icon-2.png" alt="" />
-                        </div>
-                        <div class="service-desc">
-                            <h5>Web Design</h5>
-                            <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
-                        </div>
-                    </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                    <h3>Миссия</h3>
+                    <p class="text-muted">Готовясь к собеседованию на нашем сайте 80% разработчиков узнают новое</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <img src="/img/icons/service-icon-3.png" alt="" />
-                        </div>
-                        <div class="service-desc">
-                            <h5>Photography</h5>
-                            <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
-                        </div>
-                    </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                    <h3>Материал</h3>
+                    <p class="text-muted">На сайте только свежие вопрос и задачи, никаких бородатых форумов</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <img src="/img/icons/service-icon-4.png" alt="" />
-                        </div>
-                        <div class="service-desc">
-                            <h5>Cloud System</h5>
-                            <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
-                        </div>
-                    </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                    <h3>Партнерство</h3>
+                    <p class="text-muted">Мы сотрудничаем с большим количеством компаний, которые делятся с нами вопросами</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section id="service" class="home-section text-center">
 
-    <div class="heading-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="wow bounceInDown" data-wow-delay="0.4s">
-                        <div class="section-heading">
-                            <h2>Зачем покупать аккаунт?</h2>
-                            <i class="fa fa-2x fa-angle-down"></i>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-lg-offset-5">
-                <hr class="marginbot-50">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <img src="/img/icons/service-icon-1.png" alt="" />
-                        </div>
-                        <div class="service-desc">
-                            <h5>Обновления</h5>
-                            <p>Мы постоянно обновляем базу вопросов и ответов, на бесплатных ресурсах они появляются с большим опозданием</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <img src="/img/icons/service-icon-2.png" alt="" />
-                        </div>
-                        <div class="service-desc">
-                            <h5>Все в одном месте</h5>
-                            <p>Вопросы собраны по всем разделам, которые должен знать php разработчик.
-                                С помощью сервиса можно подготовиться за вечер
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <img src="/img/icons/service-icon-3.png" alt="" />
-                        </div>
-                        <div class="service-desc">
-                            <h5>Правильные ответы</h5>
-                            <p>Все ответы были проверены и прорешаны специалистами</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <img src="/img/icons/service-icon-4.png" alt="" />
-                        </div>
-                        <div class="service-desc">
-                            <h5>Интервьюеры берут вопросы у нас</h5>
-                            <p>Придумывать вопросы не так просто, многие обращаются к нам, чтобы получить не ответы, а вопросы</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /Section: services -->
-
-
-
-
-<!-- Section: contact -->
-<section id="contact" class="home-section text-center">
-    <div class="heading-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="wow bounceInDown" data-wow-delay="0.4s">
-                        <div class="section-heading">
-                            <h2>Получить доступ</h2>
-                            <i class="fa fa-2x fa-angle-down"></i>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-2 col-lg-offset-5">
-                <hr class="marginbot-50">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="boxed-grey">
-
-                    <div id="sendmessage">Your message has been sent. Thank you!</div>
-                    <div id="errormessage"></div>
-                    <form id="contact-form" action="" method="post" role="form" class="contactForm">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">
-                                        Name</label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">
-                                        Email Address</label>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="subject">
-                                        Subject</label>
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                    <div class="validation"></div>
-                                </div>
+<section class="no-padding" id="portfolio">
+    <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+            <div class="col-lg-4 col-sm-6">
+                <a href="/img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                    <img src="/img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Database
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">
-                                        Message</label>
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                    <div class="validation"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
-                                    Send Message</button>
+                            <div class="project-name">
+                                MySQL
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="/img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                    <img src="/img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Javascript
+                            </div>
+                            <div class="project-name">
+                                Jquery
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="/img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                    <img src="/img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Development
+                            </div>
+                            <div class="project-name">
+                                PHP7
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="/img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                    <img src="/img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                NoSQL
+                            </div>
+                            <div class="project-name">
+                                Redis
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="/img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                    <img src="/img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                ООП
+                            </div>
+                            <div class="project-name">
+                                Паттерны программирования
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="/img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                    <img src="/img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Highload
+                            </div>
+                            <div class="project-name">
+                                Кеширование
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-
     </div>
 </section>
-<!-- /Section: contact -->
 
-<footer>
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>Все вопросы разбиты по темам</h2>
+            <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Получить доступ</a>
+        </div>
+    </div>
+</aside>
+
+<section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <div class="wow shake" data-wow-delay="0.4s">
-                    <div class="page-scroll marginbot-30">
-                        <a href="/#intro" id="totop" class="btn btn-circle">
-                            <i class="fa fa-angle-double-up animated"></i>
-                        </a>
-                    </div>
-                </div>
-                <p>&copy;Yoffer. Все права защищены.</p>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Хочешь поделиться отличной задачей?</h2>
+                <hr class="primary">
+                <p>Мы сотрудничам с многими компаниями, от неизвестных, до гигантов web разработки. Присылай идеи и предложения, вопросы на почту.</p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-4  text-center">
+                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                <p><a href="/mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
             </div>
         </div>
     </div>
-</footer>
+</section>
 
-<!-- Core JavaScript Files -->
-<script src="/js/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery.easing.min.js"></script>
-<script src="/js/jquery.scrollTo.js"></script>
-<script src="/js/wow.min.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="/js/custom.js"></script>
-<script src="/contactform/contactform.js"></script>
+<!-- jQuery -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="/js/creative.min.js"></script>
 
 </body>
 

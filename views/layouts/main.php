@@ -57,7 +57,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; author24.biz <?= date('Y') ?></p>
+        
     </div>
 </footer>
 
