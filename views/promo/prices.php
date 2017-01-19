@@ -144,7 +144,25 @@
         padding: 0px 5px;
         color: yellow;
     }
+
+    header {
+        min-height: 300px !important;
+    }
 </style>
+
+
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <p>
+                Лучший ресурс для подготовки к интервью и собеседованию<br />
+                Используя сервис yoffer вы подготовитесь к собеседованию за один вечер!
+            </p>
+            <a href="/#about" class="btn btn-primary btn-xl page-scroll">Начать подготовку</a>
+        </div>
+    </div>
+</header>
+
 <section id="bs-pricing-five" class="bs-pricing-five p-top-100 bg-white">
     <div class="container">
         <div class="row">
@@ -155,8 +173,8 @@
                         <h1 class="bs-caption">0<sup>руб.</sup></h1>
                         <p>По времени не ограничено</p>
                         <ul style="height: 255px">
-                            <li>Все вопросы по теории</li>
-                            <li>Практические задачи по БД</li>
+                            <li>20 вопросв по теории</li>
+                            <li>10 практических задач</li>
                             <li> </li>
                             <li> </li>
                             <li> </li>

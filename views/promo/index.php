@@ -1,3 +1,18 @@
+
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading">Для PHP и Full stack разработчиков</h1>
+            <hr>
+            <p>
+                Лучший ресурс для подготовки к интервью и собеседованию<br />
+                Используя сервис yoffer вы подготовитесь к собеседованию за один вечер!
+            </p>
+            <a href="/#about" class="btn btn-primary btn-xl page-scroll">Начать подготовку</a>
+        </div>
+    </div>
+</header>
+
 <section class="bg-primary" id="about">
     <div class="container">
         <div class="row">
