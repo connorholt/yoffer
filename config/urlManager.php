@@ -11,17 +11,17 @@ return [
     'suffix' => '/',
     'rules' => [
         // определяем главную
-//        [
-//            'class' => 'app\components\routers\MainUrlRule',
-//        ],
+        '/' => 'promo/index',
+        'questions' => 'promo/questions',
+        'prices' => 'promo/prices',
         // закрываем регистрацию и изменение пароля, стандартного модуля
         // user/ чтобы понять какие ссылки куда ведут
         'user/login' => 'user/login',
         'user/logout' => 'user/logout',
         'user/admin' => 'user/admin',
         'user/<controller>' => 'user/login',
-//        [
-//            'class' => 'app\components\routers\PagesUrlRule',
-//        ]
+        [
+            'class' => 'app\components\routers\PagesUrlRule',
+        ]
     ],
 ];

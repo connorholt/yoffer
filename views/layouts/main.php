@@ -1,65 +1,119 @@
-<?php
-
-/* @var $this \yii\web\View */
-/* @var $content string */
-
-use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
-
-AppAsset::register($this);
-?>
-<?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<html lang="en">
+
 <head>
-    <meta charset="<?= Yii::$app->charset ?>">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Your offer! Будь готов к своему офферу!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="/css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
+
+<body id="page-top">
 <?php $this->beginBody() ?>
 
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'Yoffer',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-default navbar-fixed-top',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            Yii::$app->user->isGuest ? '' : ['label' => 'Страницы', 'url' => ['/page']],
-            Yii::$app->user->isGuest ?
-                ['label' => 'Войти', 'url' => ['/user/login']] : // or ['/user/login-email']
-                ['label' => 'Выйти (' . Yii::$app->user->displayName . ')',
-                 'url' => ['/user/logout'],
-                 'linkOptions' => ['data-method' => 'post']],
-        ],
-    ]);
-    NavBar::end();
-    ?>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="/#page-top">Your offer</a>
+        </div>
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="/">О проекте</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/questions">Вопросы</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/prices">Цена</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/user/login">Войти</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-</div>
+    <!-- /.container-fluid -->
+</nav>
 
-<footer class="footer">
-    <div class="container">
-        
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading">Для PHP и Full stack разработчиков</h1>
+            <hr>
+            <p>
+                Лучший ресурс для подготовки к интервью и собеседованию<br />
+                Используя сервис yoffer вы подготовитесь к собеседованию за один вечер!
+            </p>
+            <a href="/#about" class="btn btn-primary btn-xl page-scroll">Начать подготовку</a>
+        </div>
     </div>
-</footer>
+</header>
+
+<?= $content ?>
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Хочешь поделиться отличной задачей?</h2>
+                <hr class="primary">
+                <p>Мы сотрудничам с многими компаниями, от неизвестных, до гигантов web разработки. Присылай идеи и предложения, вопросы на почту.</p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-4  text-center">
+                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                <p><a href="/mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="/js/creative.min.js"></script>
 
 <?php $this->endBody() ?>
 </body>
