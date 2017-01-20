@@ -22,7 +22,8 @@
         "yiisoft/yii2-twig": "~2.0.0",
         "understeam/yii2-httpclient": "~1.0",
         "amnah/yii2-user": "^5.0",
-        "fxp/composer-asset-plugin": "^1.2"
+        "fxp/composer-asset-plugin": "^1.2",
+        "2amigos/yii2-tinymce-widget": "~1.1"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

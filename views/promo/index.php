@@ -8,7 +8,7 @@
                 Лучший ресурс для подготовки к интервью и собеседованию<br />
                 Используя сервис yoffer вы подготовитесь к собеседованию за один вечер!
             </p>
-            <a href="/#about" class="btn btn-primary btn-xl page-scroll">Начать подготовку</a>
+            <a href="/#about" class="btn btn-success btn-xl page-scroll">Начать подготовку</a>
         </div>
     </div>
 </header>
@@ -177,3 +177,5 @@
         </div>
     </div>
 </aside>
+
+<script src="/js/creative.js"></script>

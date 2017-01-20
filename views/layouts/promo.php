@@ -25,6 +25,7 @@
 
     <!-- Theme CSS -->
     <link href="/css/creative.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,12 +34,23 @@
     <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- jQuery -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
 </head>
 
 <body id="page-top">
 <?php $this->beginBody() ?>
 
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -79,31 +91,22 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Хочешь поделиться отличной задачей?</h2>
                 <hr class="primary">
-                <p>Мы сотрудничам с многими компаниями, от неизвестных, до гигантов web разработки. Присылай идеи и предложения, вопросы на почту.</p>
+                <p>Мы сотрудничаем с многими компаниями, от неизвестных, до гигантов web разработки. Присылай идеи и предложения, вопросы на почту.</p>
             </div>
             <div class="col-lg-4 col-lg-offset-4  text-center">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                <p><a href="/mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                <p><a href="mailto:support.yoffer@yandex.ru">Написать</a></p>
+                <br />
+                <p><small>Все права защищены. Yoffer.ru 2017</small></p>
             </div>
         </div>
     </div>
 </section>
-
-<!-- jQuery -->
-<script src="/vendor/jquery/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
-<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
 <!-- Theme JavaScript -->
-<script src="/js/creative.min.js"></script>
+
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42222609 = new Ya.Metrika({ id:42222609, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42222609" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 <?php $this->endBody() ?>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
 <?php $this->endPage() ?>

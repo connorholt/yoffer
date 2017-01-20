@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Page */
 
-$this->title = $model->name;
+$this->title = $model->title;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Страницы'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -29,18 +29,15 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'name',
-            'type_id',
+            'title',
+            'category_id',
             'slug',
+            'answer:ntext',
             'created',
             'modified',
-            'title',
-            'description:ntext',
-            'form_title',
-            'form_description:ntext',
-            'form_footer_text',
-            'form_button_text',
-            'footer_text',
+            'seo_description:ntext',
+            'seo_title',
+            'seo_keyword'
         ],
     ]) ?>
 

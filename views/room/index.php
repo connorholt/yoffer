@@ -8,7 +8,7 @@ use \sergeymakinen\facades\Session;
 /* @var $searchModel app\models\SearchPage */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Страницы');
+$this->title = Yii::t('app', 'Вопросы');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="page-index">
@@ -17,8 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Создать страницу'), ['create'], ['class' => 'btn btn-success']) ?>
-        <?= Html::a(Yii::t('app', 'Обновить на всех страницах'), ['batch-update'], ['class' => 'btn btn-default']) ?>
+        <?= Html::a(Yii::t('app', 'Создать вопрос'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= Session::getFlash('error'); ?>
     <br />

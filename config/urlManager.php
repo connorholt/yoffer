@@ -13,6 +13,7 @@ return [
         // определяем главную
         '/' => 'promo/index',
         'questions' => 'promo/questions',
+        'questions/<typeId:\d+>' => 'promo/questions',
         'prices' => 'promo/prices',
         // закрываем регистрацию и изменение пароля, стандартного модуля
         // user/ чтобы понять какие ссылки куда ведут

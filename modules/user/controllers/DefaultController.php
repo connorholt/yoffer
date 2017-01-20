@@ -30,7 +30,7 @@ class DefaultController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['index', 'confirm', 'resend', 'logout'],
+                        'actions' => ['login', 'index', 'confirm', 'resend', 'logout'],
                         'allow' => true,
                         'roles' => ['?', '@'],
                     ],
@@ -40,7 +40,7 @@ class DefaultController extends Controller
                         'roles' => ['@'],
                     ],
                     [
-                        'actions' => ['login', 'register', 'forgot', 'reset', 'login-email', 'login-callback'],
+                        'actions' => ['register', 'forgot', 'reset', 'login-email', 'login-callback'],
                         'allow' => true,
                         'roles' => ['?'],
                     ],
@@ -75,6 +75,10 @@ class DefaultController extends Controller
      */
     public function actionLogin()
     {
+        if (!\Yii::$app->user->isGuest) {
+            return $this->redirect('/room/');
+        }
+
         /** @var \app\modules\user\models\forms\LoginForm $model */
         $model = $this->module->model("LoginForm");
 
@@ -82,7 +86,7 @@ class DefaultController extends Controller
         $post = Yii::$app->request->post();
         if ($model->load($post) && $model->validate()) {
             $returnUrl = $this->performLogin($model->getUser(), $model->rememberMe);
-            return $this->redirect($returnUrl);
+            return $this->redirect('/room/');
         }
 
         return $this->render('login', compact("model"));

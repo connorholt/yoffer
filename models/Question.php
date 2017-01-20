@@ -29,15 +29,10 @@ class Question extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'slug'], 'required'],
-            [['category_id', 'type_id'], 'integer'],
+            [['title', 'answer', 'question', 'slug'], 'required'],
+            [['category_id'], 'integer'],
             [['created', 'modified'], 'safe'],
-            [['description', 'form_description'], 'string'],
-            [
-                ['name', 'slug', 'ref', 'title', 'form_title', 'form_footer_text', 'form_button_text', 'footer_text'],
-                'string',
-                'max' => 255
-            ],
+            [['seo_description', 'seo_keyword', 'seo_title'], 'string'],
             [['slug'], 'unique'],
         ];
     }
@@ -61,20 +56,18 @@ class Question extends \yii\db\ActiveRecord
     {
         return [
             'id'               => Yii::t('app', 'ID'),
-            'name'             => Yii::t('app', 'Название страницы'),
-            'category_id'      => Yii::t('app', 'Предмет'),
+            'title'            => Yii::t('app', 'Заголовок'),
+            'category_id'      => Yii::t('app', 'Категория'),
             'type_id'          => Yii::t('app', 'Тип работы'),
             'slug'             => Yii::t('app', 'Алиас url'),
+            'question'         => Yii::t('app', 'Вопрос'),
+            'answer'           => Yii::t('app', 'Ответ'),
             'created'          => Yii::t('app', 'Дата создания'),
             'modified'         => Yii::t('app', 'Дата обновления'),
             'ref'              => Yii::t('app', 'Ref'),
-            'title'            => Yii::t('app', 'Заголовок страницы'),
-            'description'      => Yii::t('app', 'Описание страницы'),
-            'form_title'       => Yii::t('app', 'Заголовок формы'),
-            'form_description' => Yii::t('app', 'Описание формы'),
-            'form_footer_text' => Yii::t('app', 'Текст футера в форме'),
-            'form_button_text' => Yii::t('app', 'Текст кнопки в форме'),
-            'footer_text'      => Yii::t('app', 'Текст в футере страницы'),
+            'seo_description'  => Yii::t('app', 'Seo description'),
+            'seo_title'        => Yii::t('app', 'Seo заголовок'),
+            'seo_keyword'      => Yii::t('app', 'Seo ключевые слова'),
         ];
     }
 }

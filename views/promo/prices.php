@@ -149,20 +149,6 @@
         min-height: 300px !important;
     }
 </style>
-
-
-<header>
-    <div class="header-content">
-        <div class="header-content-inner">
-            <p>
-                Лучший ресурс для подготовки к интервью и собеседованию<br />
-                Используя сервис yoffer вы подготовитесь к собеседованию за один вечер!
-            </p>
-            <a href="/#about" class="btn btn-primary btn-xl page-scroll">Начать подготовку</a>
-        </div>
-    </div>
-</header>
-
 <section id="bs-pricing-five" class="bs-pricing-five p-top-100 bg-white">
     <div class="container">
         <div class="row">
@@ -185,7 +171,7 @@
                 <div class="col-md-3 no-padding">
                     <div class="bs-five active">
                         <h6 class="text-uppercase">Временный</h6>
-                        <h1 class="bs-caption">199<sup>руб.</sup></h1>
+                        <h1 class="bs-caption">99<sup><strike>299</strike> руб.</sup></h1>
                         <p>Доступ на 24 часа</p>
 
                         <ul style="height: 255px">
@@ -195,7 +181,7 @@
                             <li> </li>
                             <li> </li>
                         </ul>
-                        <a href="/pay/1" class="btn btn-success btn-round m-top-40">Получить доступ</a>
+                        <a href="/pay/1" class="btn btn-success btn-round m-top-40">Скидка <b>200р</b></a>
                     </div>
                 </div>
                 <div class="col-md-3 no-padding">
