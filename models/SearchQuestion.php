@@ -18,8 +18,8 @@ class SearchQuestion extends Question
     public function rules()
     {
         return [
-            [['id', 'category_id', 'type_id'], 'integer'],
-            [['name', 'slug', 'created', 'modified', 'ref', 'title', 'description', 'form_title', 'form_description', 'form_footer_text', 'form_button_text', 'footer_text'], 'safe'],
+            [['id', 'category_id'], 'integer'],
+            [['title', 'slug', 'created', 'modified', 'seo_title', 'seo_keyword', 'seo_description'], 'safe'],
         ];
     }
 
@@ -61,21 +61,15 @@ class SearchQuestion extends Question
         $query->andFilterWhere([
             'id' => $this->id,
             'category_id' => $this->category_id,
-            'type_id' => $this->type_id,
             'created' => $this->created,
             'modified' => $this->modified,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
+        $query->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'slug', $this->slug])
-            ->andFilterWhere(['like', 'ref', $this->ref])
-            ->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'description', $this->description])
-            ->andFilterWhere(['like', 'form_title', $this->form_title])
-            ->andFilterWhere(['like', 'form_description', $this->form_description])
-            ->andFilterWhere(['like', 'form_footer_text', $this->form_footer_text])
-            ->andFilterWhere(['like', 'form_button_text', $this->form_button_text])
-            ->andFilterWhere(['like', 'footer_text', $this->footer_text]);
+            ->andFilterWhere(['like', 'seo_title', $this->seo_title])
+            ->andFilterWhere(['like', 'seo_keyword', $this->seo_keyword])
+            ->andFilterWhere(['like', 'seo_description', $this->seo_description]);
 
         return $dataProvider;
     }

@@ -19,9 +19,8 @@ return [
         'user/login' => 'user/login',
         'user/logout' => 'user/logout',
         'user/admin' => 'user/admin',
-        'user/<controller>' => 'user/login',
-        [
-            'class' => 'app\components\routers\PagesUrlRule',
-        ]
+//        [
+//            'class' => 'app\components\routers\PagesUrlRule',
+//        ]
     ],
 ];

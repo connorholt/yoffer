@@ -10,20 +10,8 @@ use yii\db\Expression;
  * This is the model class for table "pages".
  *
  * @property integer $id
- * @property string $name
- * @property integer $category_id
- * @property integer $type_id
- * @property string $slug
- * @property string $created
- * @property string $modified
- * @property string $ref
  * @property string $title
- * @property string $description
- * @property string $form_title
- * @property string $form_description
- * @property string $form_footer_text
- * @property string $form_button_text
- * @property string $footer_text
+ *
  */
 class Question extends \yii\db\ActiveRecord
 {

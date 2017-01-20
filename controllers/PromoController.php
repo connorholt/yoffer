@@ -11,6 +11,8 @@ use yii\web\Controller;
 class PromoController extends Controller
 {
 
+    public $layout = 'promo';
+
     public function actionIndex()
     {
         return $this->render('index');
