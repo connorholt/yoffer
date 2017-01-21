@@ -55,7 +55,7 @@
 <section id="contact"  class="bg-primary">
     <div class="container text-center">
         <div class="call-to-action">
-            <a href="/prices" class="btn btn-default btn-xl sr-button">Подготовься к собеседованию за один вечер!</a>
+            <a href="/prices" class="btn btn-default btn-xl sr-button">Подготовься к собеседованию!</a>
         </div>
     </div>
 </section>
