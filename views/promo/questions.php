@@ -30,6 +30,10 @@
                     'dataProvider' => $dataProvider,
                     'itemView' => '_list',
                     'layout'=>"{items}\n{pager}",
+                    'itemOptions' => [
+                        'tag' => 'div',
+                        'class' => 'panel panel-default'
+                    ],
                 ]);
                 ?>
             </div>

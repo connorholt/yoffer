@@ -3,7 +3,7 @@ use yii\helpers\Html;
 use yii\helpers\HtmlPurifier;
 ?>
 
-<div class="panel panel-default">
+
     <div class="panel-heading">
         <h4 class="panel-title">
             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
@@ -22,4 +22,3 @@ use yii\helpers\HtmlPurifier;
             <div class="btn-group btn-group-sm pull-right"><a class="btn btn-success" href="/prices">Узнать ответ</a></div>
         </div>
     </div>
-</div>
