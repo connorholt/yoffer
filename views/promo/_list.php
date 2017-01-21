@@ -7,12 +7,12 @@ use yii\helpers\HtmlPurifier;
     <div class="panel-heading">
         <h4 class="panel-title">
             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-               href="#collapse-3">
+               href="#collapse-<?=$model->id;?>">
                 <?=$model->title;?>
             </a>
         </h4>
     </div>
-    <div id="collapse-3" class="panel-collapse collapse">
+    <div id="collapse-<?=$model->id;?>" class="panel-collapse collapse">
         <div class="panel-body">
             <b>Вопрос:</b><br />
             <?=$model->question;?>
