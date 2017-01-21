@@ -58,6 +58,15 @@ use app\models\Type;
 
     <?= $form->field($model, 'seo_keyword')->textarea(['rows' => 6]) ?>
 
+    <?= $form->field($model, 'is_public')->checkbox() ?>
+
+    <?= $form->field($model, 'is_show_answer')->checkbox() ?>
+
+    <?= $form->field($model, 'is_famous')->checkbox() ?>
+
+    <?= $form->field($model, 'is_often')->checkbox() ?>
+
+
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Сохранить'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

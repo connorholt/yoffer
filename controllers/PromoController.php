@@ -24,7 +24,10 @@ class PromoController extends Controller
     public function actionQuestions($typeId = 1)
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Question::find()->where(['category_id'=>$typeId])->orderBy('created DESC'),
+            'query' => Question::find()->where([
+                'category_id' => $typeId,
+                'is_public' => true
+            ])->orderBy('created DESC'),
             'pagination' => [
                 'pageSize' => 20
             ],

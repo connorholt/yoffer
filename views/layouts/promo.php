@@ -14,7 +14,6 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -57,7 +56,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="/#page-top">Your offer</a>
+            <a class="navbar-brand page-scroll" href="/">Your offer</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -105,7 +104,13 @@
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42253589 = new Ya.Metrika({ id:42253589, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42253589" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 <?php $this->endBody() ?>
-<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+    hljs.initHighlightingOnLoad();
+</script>
 </body>
 </html>
 <?php $this->endPage() ?>

@@ -8,7 +8,7 @@
                 Лучший ресурс для подготовки к интервью и собеседованию<br />
                 Используя сервис yoffer вы подготовитесь к собеседованию за один вечер!
             </p>
-            <a href="/#about" class="btn btn-success btn-xl page-scroll">Начать подготовку</a>
+            <a href="/questions" class="btn btn-success btn-xl page-scroll">Начать подготовку</a>
         </div>
     </div>
 </header>
@@ -23,7 +23,7 @@
                     Все вопросы решены senior разработчиками, к каждому заданию указаны ссылки на дополнительные материалы и ресурсы. <br />
                     База вопросов и задач постоянно пополняется.
                 </p>
-                <a href="/#services" class="page-scroll btn btn-default btn-xl sr-button">Посмотреть вопросы</a>
+                <a href="/questions" class="page-scroll btn btn-default btn-xl sr-button">Посмотреть вопросы</a>
             </div>
         </div>
     </div>
@@ -173,7 +173,7 @@
     <div class="container text-center">
         <div class="call-to-action">
             <h2>Все вопросы разбиты по темам</h2>
-            <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Получить доступ</a>
+            <a href="/questions" class="btn btn-default btn-xl sr-button">Получить доступ</a>
         </div>
     </div>
 </aside>
