@@ -152,6 +152,10 @@
 <section id="bs-pricing-five" class="bs-pricing-five p-top-100 bg-white">
     <div class="container">
         <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Выберите нужный тариф</h2>
+                <hr class="primary">
+            </div>
             <div class="bs-five-area bs-radius">
                 <div class="col-md-3 no-padding">
                     <div class="bs-five">
@@ -185,7 +189,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 no-padding">
-                    <div class="bs-five">
+                      <div class="bs-five">
                         <h6 class="text-uppercase">Стандарт</h6>
                         <h1 class="bs-caption">499<sup>руб.</sup></h1>
                         <p>Доступ на 3 месяца</p>
@@ -221,3 +225,16 @@
     </div>
 </section>
 
+<section id="contact" style="padding: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Оплата доступа</h2>
+                <hr class="primary">
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=410013732168585&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0+%D0%BD%D0%B0+%D1%81%D0%B0%D0%B9%D1%82&targets-hint=&default-sum=99&button-text=01&mail=on&phone=on&successURL=yoffer.ru%2Fpay" width="450" height="198"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
