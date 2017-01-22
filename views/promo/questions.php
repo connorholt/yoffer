@@ -47,6 +47,8 @@
                 }
                 ?>
             </div>
+
+<!--            <script class="hh-script" src="https://api.hh.ru/widgets/vacancies/search?count=6&locale=RU&links_color=868686&border_color=868686&text=php&area=113&show_region=true&specialization=1&currency=RUR&only_with_salary=true&salary=200000&experience=between3And6&employment=full&employment=project"></script>-->
         </div>
     </div>
 </div>

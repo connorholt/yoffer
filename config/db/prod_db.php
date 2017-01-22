@@ -2,8 +2,8 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'pgsql:host=localhost;port=5433;dbname=yoffer',
+    'dsn' => 'pgsql:host=127.0.0.1;dbname=yoffer',
     'username' => 'yoffer',
-    'password' => 'yoffer',
+    'password' => 'fdgr445gd3e3eS_&',
     'charset' => 'utf8',
 ];
