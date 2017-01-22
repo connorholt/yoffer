@@ -9,6 +9,12 @@
     section {
         padding: 40px 0;
     }
+     i.grey {
+         color: darkgray;
+     }
+    p, pre {
+        font-size: 14px !important;
+    }
 </style>
 <script>
     $('.carousel').carousel({

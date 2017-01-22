@@ -2,14 +2,6 @@
 use yii\helpers\Html;
 use yii\helpers\HtmlPurifier;
 ?>
-<style>
-    i.grey {
-        color: darkgray;
-    }
-    p, pre {
-        font-size: 14px !important;
-    }
-</style>
 
 
     <div class="panel-heading">
