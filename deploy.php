@@ -25,8 +25,8 @@ task('upload_config', function() {
 })->desc('Change production');
 
 task('deploy:assets', function () {
-    run('chmod -R 755 {{release_path}}/web/assets');
-})->desc('Chomd 755 assets');
+    run('chmod -R 775 {{release_path}}/web/assets');
+})->desc('Chomd 775 assets');
 task('deploy:composer', function() {
     run("cd {{release_path}} && composer update --no-dev --prefer-dist --optimize-autoloader");
 });

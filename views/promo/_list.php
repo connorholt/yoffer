@@ -6,6 +6,9 @@ use yii\helpers\HtmlPurifier;
     i.grey {
         color: darkgray;
     }
+    p, pre {
+        font-size: 14px !important;
+    }
 </style>
 
 
@@ -39,6 +42,8 @@ use yii\helpers\HtmlPurifier;
         <?php endif;?>
         <div class="panel-footer">
             <div class="btn-group btn-group-sm"><span class="btn">Понравился вопрос?</span><a class="btn btn-success" href="/prices"><i class="fa fa-thumbs-up"></i> Да</a> <a class="btn btn-danger" href="/prices"><i class="fa fa-thumbs-down"></i> Нет</a></div>
+            <?php if (!$model->is_show_answer): ?>
             <div class="btn-group btn-group-sm pull-right"><a class="btn btn-success" href="/prices">Узнать ответ</a></div>
+            <?php endif;?>
         </div>
     </div>
