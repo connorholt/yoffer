@@ -16,7 +16,7 @@ set('keep_releases', 3);
 set('repository', 'git@github.com:connorholt/yoffer.git');
 add('shared_files', []);
 add('writable_dirs', [
-    'runtime', 'web/assets', 'vendor'
+    'runtime', 'runtime/cache', 'web/assets', 'vendor'
 ]);
 server('production');
 
