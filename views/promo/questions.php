@@ -63,7 +63,9 @@
 <section id="contact"  class="bg-primary">
     <div class="container text-center">
         <div class="call-to-action">
-            <a href="/prices" class="btn btn-default btn-xl sr-button">Подготовься к собеседованию!</a>
+            <h2>Получите доступ к полной версии</h2>
+            <p>Вы можете выбрать один из тарифов и получит доступ ко все вопросам и ответам</p>
+            <a href="/prices" class="btn btn-default btn-xl sr-button">Ознакомиться с тарифами</a>
         </div>
     </div>
 </section>
