@@ -48,6 +48,8 @@ class RoomController extends Controller
         // note: check for Yii::$app->user first because it doesn't exist in console commands (throws exception)
         if (!empty(Yii::$app->user) && !Yii::$app->user->can("admin")) {
             throw new ForbiddenHttpException('You are not allowed to perform this action.');
+        } else {
+            $this->redirect('/area/');
         }
 
         parent::init();

@@ -9,6 +9,7 @@ use Yii;
 use app\models\Question;
 use app\models\SearchQuestion;
 use yii\base\Model;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -42,8 +43,16 @@ class AreaController extends Controller
      */
     public function actionIndex($typeId = 1)
     {
-        $searchModel = new SearchQuestion();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = new ActiveDataProvider([
+            'query' => Question::find()->where([
+                'category_id' => $typeId,
+                'is_public' => true
+            ])->orderBy('created DESC'),
+            'pagination' => [
+                'pageSize' => 20
+            ],
+        ]);
+
 
         $currentType = Type::findOne($typeId);
 
@@ -52,7 +61,6 @@ class AreaController extends Controller
         }
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'currentType' => $currentType
         ]);
