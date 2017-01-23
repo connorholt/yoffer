@@ -20,6 +20,8 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -62,6 +64,13 @@ AppAsset::register($this);
 </footer>
 
 <?php $this->endBody() ?>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+    hljs.initHighlightingOnLoad();
+</script>
 </body>
 </html>
 <?php $this->endPage() ?>

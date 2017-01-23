@@ -42,138 +42,98 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                    <i class="fa fa-4x fa-trophy text-primary sr-icons"></i>
                     <h3>Качество</h3>
-                    <p class="text-muted">Вопросы и задачи собраны с настоящих собеседований и прорешаны профессионалами</p>
+                    <p class="text-muted">
+                        Высокое качество вопросов и ответов.
+                        Материал собран с настоящих собеседований.
+                    </p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                    <h3>Миссия</h3>
-                    <p class="text-muted">Готовясь к собеседованию на нашем сайте 80% разработчиков узнают новое</p>
+                    <i class="fa fa-4x fa-graduation-cap text-primary sr-icons"></i>
+                    <h3>Актуальность</h3>
+                    <p class="text-muted">
+                        Технологии развиваются и мы постоянно обновляем базу
+                        вопросов, а также отслеживаем новые вопросы
+                    </p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                    <h3>Материал</h3>
-                    <p class="text-muted">На сайте только свежие вопрос и задачи, никаких бородатых форумов</p>
+                    <i class="fa fa-4x fa-hourglass-half text-primary sr-icons"></i>
+                    <h3>Простота</h3>
+                    <p class="text-muted">
+                        Ответы объясняются простым и доступным языком.
+                        Для подготовки к собеседованию достаточно одного вечера.
+                    </p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                    <h3>Партнерство</h3>
-                    <p class="text-muted">Мы сотрудничаем с большим количеством компаний, которые делятся с нами вопросами</p>
+                    <i class="fa fa-4x fa-database text-primary sr-icons"></i>
+                    <h3>Объем</h3>
+                    <p class="text-muted">
+                        На нашем сайте собран весь нужный материал для подготовки.
+                        Не нужно искать вопросы и ответы, все собрано в одном месте.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-search text-primary sr-icons"></i>
+                    <h3>Источники</h3>
+                    <p class="text-muted">
+                        Мы выбрали самое нужное из документациий и конференций.
+                        Наши ответы проверены экспертами.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-users text-primary sr-icons"></i>
+                    <h3>Эксперты</h3>
+                    <p class="text-muted">
+                        Мы сотрудничаем с программистами высокого уровня,
+                        для проверки материала и пополнения базы вопросов
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-info text-primary sr-icons"></i>
+                    <h3>Советы</h3>
+                    <p class="text-muted">
+                        Ответы на собеседованиях иногда расходятся с реальной жизнью,
+                        в советах мы поделились тем, что пригодится при работе
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-link text-primary sr-icons"></i>
+                    <h3>Ссылки</h3>
+                    <p class="text-muted">
+                        Каждый ответ дополнен ссылками на источники и дополнитеные материалы,
+                        чтобы вы могли освежить свои знания или узнать что-то новое
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
-            <div class="col-lg-4 col-sm-6">
-                <a href="/img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                    <img src="/img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Database
-                            </div>
-                            <div class="project-name">
-                                MySQL
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="/img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                    <img src="/img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Javascript
-                            </div>
-                            <div class="project-name">
-                                Jquery
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="/img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                    <img src="/img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Development
-                            </div>
-                            <div class="project-name">
-                                PHP7
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="/img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                    <img src="/img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                NoSQL
-                            </div>
-                            <div class="project-name">
-                                Redis
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="/img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                    <img src="/img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                ООП
-                            </div>
-                            <div class="project-name">
-                                Паттерны программирования
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="/img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                    <img src="/img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Highload
-                            </div>
-                            <div class="project-name">
-                                Кеширование
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<aside class="bg-dark">
+<aside class="bg-primary">
     <div class="container text-center">
         <div class="call-to-action">
-            <h2>Все вопросы разбиты по темам</h2>
-            <a href="/questions" class="btn btn-default btn-xl sr-button">Получить доступ</a>
+            <h2>Готовьтесь легко и просто</h2>
+            <p>Все вопросы разбиты по категориям <br />
+               Внутри категорий вопросы отсортированы по сложности</p>
+            <a href="/questions" class="btn btn-default btn-xl sr-button">Посмотреть вопросы</a>
         </div>
     </div>
 </aside>

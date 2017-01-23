@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /user
+Disallow: /room
+Disallow: /area
+sitemap: http://yoffer.ru/sitemaps.xml
