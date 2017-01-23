@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Подготовка к собеседованию на вакансию php разработчик, full stack разработчик">
-    <meta name="keywords" content="Собеседование, php, fullstack">
+    <meta name="keywords" content="Собеседование, php, fullstack, вопросы к собеседованию, задачи с собеседований, интервью php, php developer подготовка">
     <meta name="author" content="">
 
     <title>Your offer! Будь готов к своему офферу!</title>
