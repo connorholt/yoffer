@@ -24,10 +24,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'rowOptions' => function ($model, $index, $widget, $grid){
+            if($model->is_public){
+                return ['class' => 'success'];
+            }else{
+                return [];
+            }
+        },
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
             'title',
             [
                 'attribute' => 'slug',
@@ -36,17 +41,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'format' => 'raw',
             ],
-            // 'created',
-            // 'modified',
-            // 'ref',
-            // 'title',
-            // 'description:ntext',
-            // 'form_title',
-            // 'form_description:ntext',
-            // 'form_footer_text',
-            // 'form_button_text',
-            // 'footer_text',
-
+            'is_show_answer',
+            'is_public',
             ['class' => 'app\components\CustomActionColumn'],
         ],
     ]); ?>

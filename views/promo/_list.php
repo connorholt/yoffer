@@ -2,13 +2,11 @@
 use yii\helpers\Html;
 use yii\helpers\HtmlPurifier;
 ?>
-
-
     <div class="panel-heading">
         <h4 class="panel-title">
             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
                href="#collapse-<?=$model->id;?>">
-                <?=$model->title;?>
+                <?=($index +1);?>. <?=$model->title;?>
             </a>
             <?php if ($model->is_show_answer): ?>
             <i class="fa fa-lightbulb-o pull-right grey" data-toggle="tooltip" data-placement="top" aria-hidden="true" title="Ответ доступен бесплатно"></i>
@@ -30,6 +28,12 @@ use yii\helpers\HtmlPurifier;
         <div class="panel-body">
             <b>Ответ:</b><br />
             <?=$model->answer;?>
+        </div>
+        <?php endif;?>
+        <?php if (!empty($model->hint)): ?>
+        <div class="panel-body">
+            <b>Совет:</b><br />
+            <?=$model->hint;?>
         </div>
         <?php endif;?>
         <div class="panel-footer">
