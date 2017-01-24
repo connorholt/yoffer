@@ -14,6 +14,7 @@ return [
         '/' => 'promo/index',
         'questions' => 'promo/questions',
         'questions/<typeId:\d+>' => 'promo/questions',
+        'area/<typeId:\d+>' => 'area/index',
         'prices' => 'promo/prices',
         // закрываем регистрацию и изменение пароля, стандартного модуля
         // user/ чтобы понять какие ссылки куда ведут
