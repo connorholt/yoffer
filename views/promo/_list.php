@@ -15,7 +15,7 @@ use yii\helpers\HtmlPurifier;
             <i class="fa fa-graduation-cap pull-right grey" data-toggle="tooltip" data-placement="top" aria-hidden="true" title="Вопрос из известной компании"></i>
             <?php endif;?>
             <?php if ($model->is_often): ?>
-            <i class="fa fa-line-chart pull-right grey" data-toggle="tooltip" data-placement="top" aria-hidden="true" title="Популярный вопрос"></i>
+            <i class="fa fa-star pull-right grey" data-toggle="tooltip" data-placement="top" aria-hidden="true" title="Популярный вопрос"></i>
             <?php endif;?>
         </h4>
     </div>
