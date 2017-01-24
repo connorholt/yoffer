@@ -16,11 +16,6 @@
         font-size: 14px !important;
     }
 </style>
-<script>
-    $('.carousel').carousel({
-        interval: 3000
-    })
-</script>
 <section id="bs-pricing-five" class="bs-pricing-five bg-white">
     <div class="container">
         <div class="page-header">
