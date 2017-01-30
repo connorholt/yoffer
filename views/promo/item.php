@@ -76,9 +76,9 @@ $this->metaTags['keyword'] = $model->seo_keyword;
                     </div>
                     <br />
                     <div class="btn-group pull-right" role="group" aria-label="...">
-                        <a href="/<?= $model->getPrevSlug();?>" class="btn btn-default">Предыдущий вопрос</a>
+                        <a href="/questions/<?= $model->getPrevSlug();?>" class="btn btn-default">Предыдущий вопрос</a>
                         <a href="/prices" class="btn btn-success">Все вопросы и ответы</a>
-                        <a href="/<?= $model->getNextSlug();?>" class="btn btn-default">Следующий вопрос</a>
+                        <a href="/questions/<?= $model->getNextSlug();?>" class="btn btn-default">Следующий вопрос</a>
                     </div>
                     <br />
 
