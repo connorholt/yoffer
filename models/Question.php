@@ -75,4 +75,26 @@ class Question extends \yii\db\ActiveRecord
             'dislike'          => Yii::t('app', 'Против вопроса'),
         ];
     }
+
+    public function getPrevSlug()
+    {
+        $model = Question::find()->where([
+            'category_id' => $this->category_id,
+            'is_public' => true
+        ])->andWhere('id < :id', [':id' => $this->id])
+            ->orderBy('created DESC')->one();
+
+        return $model->slug ?? '';
+    }
+
+    public function getNextSlug()
+    {
+        $model = Question::find()->where([
+            'category_id' => $this->category_id,
+            'is_public' => true
+        ])->andWhere('id > :id', [':id' => $this->id])
+            ->orderBy('created DESC')->one();
+
+        return $model->slug ?? '';
+    }
 }

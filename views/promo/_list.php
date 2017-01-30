@@ -4,8 +4,8 @@ use yii\helpers\HtmlPurifier;
 ?>
     <div class="panel-heading">
         <h4 class="panel-title">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-               href="#collapse-<?=$model->id;?>">
+            <a class="accordion-toggle"
+                href="<?=$model->slug;?>">
                 <?=($index +1);?>. <?=$model->title;?>
             </a>
             <?php if ($model->is_show_answer): ?>

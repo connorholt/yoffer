@@ -14,6 +14,7 @@ return [
         '/' => 'promo/index',
         'questions' => 'promo/questions',
         'questions/<typeId:\d+>' => 'promo/questions',
+        'questions/<slug:[A-Za-z0-9 -_.]+>' => 'promo/question',
         'area/<typeId:\d+>' => 'area/index',
         'prices' => 'promo/prices',
         // закрываем регистрацию и изменение пароля, стандартного модуля
