@@ -16,8 +16,24 @@ class PromoController extends Controller
 
     public $layout = 'promo';
 
+    public function beforeAction($action)
+    {
+        parent::beforeAction($action);
+
+        \Yii::$app->view->registerMetaTag([
+            'description' => 'Подготовка к собеседованию на вакансию php разработчик, full stack разработчик',
+        ]);
+        \Yii::$app->view->registerMetaTag([
+            'keywords' => 'Собеседование, php, fullstack, вопросы к собеседованию, задачи с собеседований, интервью php, php developer подготовка',
+        ]);
+        \Yii::$app->view->title = 'Your offer! Будь готов к своему офферу!';
+
+        return true;
+    }
+
     public function actionIndex()
     {
+
         return $this->render('index');
     }
 
@@ -33,6 +49,15 @@ class PromoController extends Controller
             $currentType = Type::findOne(1);
         }
 
+        \Yii::$app->view->clear();
+        \Yii::$app->view->title = $model->seo_title;
+        \Yii::$app->view->registerMetaTag([
+            'description' => $model->seo_description,
+        ]);
+        \Yii::$app->view->registerMetaTag([
+            'keywords' => $model->seo_keyword,
+        ]);
+
         return $this->render('item', [
             'model' => $model,
             'currentType' => $currentType
@@ -41,6 +66,8 @@ class PromoController extends Controller
 
     public function actionQuestions($typeId = 1)
     {
+        \Yii::$app->view->title = 'Вопросы к собеседованию';
+
         $dataProvider = new ActiveDataProvider([
             'query' => Question::find()->where([
                 'category_id' => $typeId,
@@ -65,6 +92,8 @@ class PromoController extends Controller
 
     public function actionPrices()
     {
+        \Yii::$app->view->title = 'Получить доступ ко всем вопросам и ответам';
+
         return $this->render('prices');
     }
 }

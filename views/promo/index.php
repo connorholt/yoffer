@@ -1,3 +1,69 @@
+<style>
+    /* Carousel */
+
+    #quote-carousel {
+        padding: 0 10px 30px 10px;
+        margin-top: 30px;
+        /* Control buttons  */
+        /* Previous button  */
+        /* Next button  */
+        /* Changes the position of the indicators */
+        /* Changes the color of the indicators */
+    }
+    #quote-carousel .carousel-control {
+        background: none;
+        color: #CACACA;
+        font-size: 2.3em;
+        text-shadow: none;
+        margin-top: 30px;
+    }
+    #quote-carousel .carousel-control.left {
+        left: -60px;
+    }
+    #quote-carousel .carousel-control.right {
+        right: -60px;
+    }
+    #quote-carousel .carousel-indicators {
+        right: 50%;
+        top: auto;
+        bottom: 0px;
+        margin-right: -19px;
+    }
+    #quote-carousel .carousel-indicators li {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        cursor: pointer;
+        border: 4px solid #CCC;
+        border-radius: 50px;
+        opacity: 0.4;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+    #quote-carousel .carousel-indicators .active {
+        background: #333333;
+        width: 128px;
+        height: 128px;
+        border-radius: 100px;
+        border-color: #f33;
+        opacity: 1;
+        overflow: hidden;
+    }
+    .carousel-inner {
+        min-height: 300px;
+    }
+    .item blockquote {
+        border-left: none;
+        margin: 0;
+    }
+    .item blockquote p:before {
+        content: "\f10d";
+        font-family: 'Fontawesome';
+        float: left;
+        margin-right: 10px;
+    }
+</style>
+
 <header xmlns="http://www.w3.org/1999/html">
     <div class="header-content">
         <div class="header-content-inner">
@@ -138,5 +204,70 @@
         </div>
     </div>
 </aside>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" data-wow-delay="0.2s">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
+                        </li>
+                    </ol>
+
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+
+                                        <p>Искал информацию при подготовке к собеседованию, и нашел ваш сайт, сначала сам искал ответы на вопросы, но потом понял, что много времени трачу, на то чтобы выбрать среди большого количества информации ответ, многие ответы сбивали меня, и я решил оплатить доступ на сутки. И не пожалел, подготовился за один вечер, сейчас работаю в хорошей компании!</p>
+                                        <small>Андрей. Middle php developer</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+
+                                        <p>Всегда очень волнуюсь на собеседованиях, хотя был на них не один раз. Очень бесит всегда искать вопросы, чтобы освежить какие то мелочи, очень обрадовался когда нашел ваш сайт. Все структурировано, прошелся по вопросам с ответами, освежил память и пошел на собеседование. Многие вопросы совпали, интервьюеры отметили, что я очень хорошо подготовился к собеседованию и предложили оффер! Спасибо вам!</p>
+                                        <small>Николай. Web разработчик</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+
+                                        <p>Я готовилась к своему первому собеседованию, искала вопросы, которые задают в компаниях и нашла ваш сайт. Оплатила доступ, и готовилась, здорово что есть ссылки на материалы и собраны все вопросы, выручили, спасибо вам! Узнала много нового))</p>
+                                        <small>Анна. Junior разработчик</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script src="/js/creative.js"></script>

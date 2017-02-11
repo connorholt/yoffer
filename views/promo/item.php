@@ -24,12 +24,105 @@ $this->metaTags['keyword'] = $model->seo_keyword;
     p, pre {
         font-size: 14px !important;
     }
+
+    .breadcrumb-arrow {
+        height: 36px;
+        padding: 0;
+        line-height: 36px;
+        list-style: none;
+        background-color: #e6e9ed
+    }
+    .breadcrumb-arrow li:first-child a {
+        border-radius: 4px 0 0 4px;
+        -webkit-border-radius: 4px 0 0 4px;
+        -moz-border-radius: 4px 0 0 4px
+    }
+    .breadcrumb-arrow li, .breadcrumb-arrow li a, .breadcrumb-arrow li span {
+        display: inline-block;
+        vertical-align: top
+    }
+    .breadcrumb-arrow li:not(:first-child) {
+        margin-left: -5px
+    }
+    .breadcrumb-arrow li+li:before {
+        padding: 0;
+        content: ""
+    }
+    .breadcrumb-arrow li span {
+        padding: 0 10px
+    }
+    .breadcrumb-arrow li a, .breadcrumb-arrow li:not(:first-child) span {
+        height: 36px;
+        padding: 0 10px 0 25px;
+        line-height: 36px
+    }
+    .breadcrumb-arrow li:first-child a {
+        padding: 0 10px
+    }
+    .breadcrumb-arrow li a {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        background-color: #3bafda;
+        border: 1px solid #3bafda
+    }
+    .breadcrumb-arrow li:first-child a {
+        padding-left: 10px
+    }
+    .breadcrumb-arrow li a:after, .breadcrumb-arrow li a:before {
+        position: absolute;
+        top: -1px;
+        width: 0;
+        height: 0;
+        content: '';
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent
+    }
+    .breadcrumb-arrow li a:before {
+        right: -10px;
+        z-index: 3;
+        border-left-color: #3bafda;
+        border-left-style: solid;
+        border-left-width: 11px
+    }
+    .breadcrumb-arrow li a:after {
+        right: -11px;
+        z-index: 2;
+        border-left: 11px solid #2494be
+    }
+    .breadcrumb-arrow li a:focus, .breadcrumb-arrow li a:hover {
+        background-color: #4fc1e9;
+        border: 1px solid #4fc1e9
+    }
+    .breadcrumb-arrow li a:focus:before, .breadcrumb-arrow li a:hover:before {
+        border-left-color: #4fc1e9
+    }
+    .breadcrumb-arrow li a:active {
+        background-color: #2494be;
+        border: 1px solid #2494be
+    }
+    .breadcrumb-arrow li a:active:after, .breadcrumb-arrow li a:active:before {
+        border-left-color: #2494be
+    }
+    .breadcrumb-arrow li span {
+        color: #434a54
+    }
 </style>
-<section id="bs-pricing-five" class="bs-pricing-five bg-white">
+
+<section style="margin-top: 40px; padding-bottom: 0px;">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/questions/">Вопросы</a></li>
+            <li class="active"><?=$model->title;?></li>
+        </ol>
+    </div>
+</section>
+
+<section id="bs-pricing-five" class="bs-pricing-five bg-white"  style="padding-top: 0px;">
     <div class="container">
         <div class="page-header">
-            <h3><?=$model->title;?>
-            </h3>
+            <h1><?=$model->title;?></h1>
         </div>
         <div class="row">
             <div id="faq" class="col-md-9">
@@ -51,13 +144,14 @@ $this->metaTags['keyword'] = $model->seo_keyword;
                         </h4>
                     </div>
                     <div id="collapse-<?=$model->id;?>" class="">
+                        <div class="btn-group btn-group-sm"><span class="btn">Вопрос</span></div>
                         <div class="panel-body">
-                            <b>Вопрос:</b><br />
                             <?=$model->question;?>
                         </div>
                         <?php if ($model->is_show_answer): ?>
+                            <hr />
+                            <div class="btn-group btn-group-sm"><span class="btn">Ответ</span></div>
                             <div class="panel-body">
-                                <b>Ответ:</b><br />
                                 <?=$model->answer;?>
                             </div>
                         <?php endif;?>
@@ -74,14 +168,6 @@ $this->metaTags['keyword'] = $model->seo_keyword;
                             <?php endif;?>
                         </div>
                     </div>
-                    <br />
-                    <div class="btn-group pull-right" role="group" aria-label="...">
-                        <a href="/questions/<?= $model->getPrevSlug();?>" class="btn btn-default">Предыдущий вопрос</a>
-                        <a href="/prices" class="btn btn-success">Все вопросы и ответы</a>
-                        <a href="/questions/<?= $model->getNextSlug();?>" class="btn btn-default">Следующий вопрос</a>
-                    </div>
-                    <br />
-
                 </div>
             </div>
             <div class="col-md-3">
@@ -101,12 +187,30 @@ $this->metaTags['keyword'] = $model->seo_keyword;
     </div>
 </section>
 
+
+<aside>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="call-to-action">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <a href="/questions/<?= $model->getPrevSlug();?>" class="btn btn-default btn-xl sr-button"><< Предыдущий вопрос</a>
+                        <a href="/questions/<?= $model->getNextSlug();?>" class="btn btn-default btn-xl sr-button">Следующий вопрос >></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+
 <section id="contact"  class="bg-primary">
     <div class="container text-center">
         <div class="call-to-action">
             <h2>Получите доступ к полной версии</h2>
             <p>Вы можете выбрать один из тарифов и получит доступ ко все вопросам и ответам</p>
-            <a href="/prices" class="btn btn-default btn-xl sr-button">Ознакомиться с тарифами</a>
+            <a href="/prices" class="btn btn-default btn-xl sr-button">Получить доступ</a>
         </div>
     </div>
 </section>

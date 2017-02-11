@@ -2,15 +2,11 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Подготовка к собеседованию на вакансию php разработчик, full stack разработчик">
-    <meta name="keywords" content="Собеседование, php, fullstack, вопросы к собеседованию, задачи с собеседований, интервью php, php developer подготовка">
-    <meta name="author" content="">
-
-    <title>Your offer! Будь готов к своему офферу!</title>
+    <title><?= \yii\helpers\Html::encode($this->title) ?></title>
+    <?php $this->head()?>
 
     <!-- Bootstrap Core CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -84,21 +80,20 @@
 
 <?= $content ?>
 
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Хочешь поделиться отличной задачей?</h2>
-                <hr class="primary">
-                <p>Мы сотрудничаем с многими компаниями, от неизвестных, до гигантов web разработки. Присылай идеи и предложения, вопросы на почту.</p>
-            </div>
-            <div class="col-lg-4 col-lg-offset-4  text-center">
-                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                <p><a href="mailto:support.yoffer@yandex.ru">Написать</a></p>
-                <br />
-                <p><small>Все права защищены. Yoffer.ru 2017</small></p>
-            </div>
-        </div>
+<section class="bg-dark">
+    <div class="container text-center">
+        <p>© 2017 - support.yoffer@yandex.ru </p>
+        <ul class="list-inline">
+            <li>
+                <a href="/">Главная</a>
+            </li>
+            <li>
+                <a href="/questions/">Вопросы</a>
+            </li>
+            <li>
+                <a href="/prices/">Тарифы</a>
+            </li>
+        </ul>
     </div>
 </section>
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42253589 = new Ya.Metrika({ id:42253589, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42253589" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
