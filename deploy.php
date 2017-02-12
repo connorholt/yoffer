@@ -43,7 +43,6 @@ task('deploy', [
     'deploy:update_code',
     'deploy:shared',
     'deploy:vendors',
-    'deploy:composer',
     'deploy:run_migrations',
     'deploy:assets',
     'deploy:symlink',

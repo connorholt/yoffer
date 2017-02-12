@@ -2,10 +2,6 @@
 use yii\helpers\Html;
 use yii\helpers\HtmlPurifier;
 
-
-$this->title = $model->seo_title;
-$this->metaTags['description'] = $model->seo_description;
-$this->metaTags['keyword'] = $model->seo_keyword;
 ?>
 <style>
     .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
