@@ -82,7 +82,7 @@ class Question extends \yii\db\ActiveRecord
             'category_id' => $this->category_id,
             'is_public' => true
         ])->andWhere('id < :id', [':id' => $this->id])
-            ->orderBy('created DESC')->one();
+            ->orderBy('id DESC')->one();
 
         return $model->slug ?? '';
     }
@@ -93,7 +93,7 @@ class Question extends \yii\db\ActiveRecord
             'category_id' => $this->category_id,
             'is_public' => true
         ])->andWhere('id > :id', [':id' => $this->id])
-            ->orderBy('created ASC')->one();
+            ->orderBy('id ASC')->one();
 
         return $model->slug ?? '';
     }

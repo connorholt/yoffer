@@ -96,4 +96,25 @@ class PromoController extends Controller
 
         return $this->render('prices');
     }
+
+    public function actionPay($id)
+    {
+        \Yii::$app->view->title = 'Получить доступ ко всем вопросам и ответам';
+
+        switch ($id) {
+            case 1:
+                $sum = 99;
+                break;
+            case 2:
+                $sum = 499;
+                break;
+            case 3:
+                $sum = 999;
+                break;
+            default:
+                $sum = 10;
+        }
+
+        return $this->render('pay', ['sum' => $sum]);
+    }
 }

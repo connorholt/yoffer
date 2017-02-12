@@ -12,6 +12,7 @@ return [
     'rules' => [
         // определяем главную
         '/' => 'promo/index',
+        'pay/<id:\d+>' => 'promo/pay',
         'questions' => 'promo/questions',
         'questions/<typeId:\d+>' => 'promo/questions',
         'questions/<slug:[A-Za-z0-9 -_.]+>' => 'promo/question',

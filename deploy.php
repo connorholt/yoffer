@@ -30,6 +30,9 @@ task('deploy:assets', function () {
 task('deploy:composer', function() {
     run("cd {{release_path}} && composer update --no-dev --prefer-dist --optimize-autoloader");
 });
+task('fpm_restart', function() {
+    run("service php7.0-fpm restart");
+});
 
 before('deploy:run_migrations', 'upload_config');
 
@@ -46,6 +49,7 @@ task('deploy', [
     'deploy:symlink',
     'deploy:unlock',
     'cleanup',
+    'fpm_restart',
 ])->desc('Deploy your project');
 
 after('deploy', 'success');
