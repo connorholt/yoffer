@@ -1,5 +1,5 @@
 <?php
-// php vendor/bin/dep deploy^C
+// php vendor/bin/dep deploy
 namespace Deployer;
 
 define('YII_DEBUG', false);
